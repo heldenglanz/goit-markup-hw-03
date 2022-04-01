@@ -4,7 +4,9 @@
   --white-color: #ffffff;
   --accent-color: #2196f3;
 }
-
+html{
+  margin: 0 auto;
+}
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--white-color);
@@ -34,11 +36,23 @@ ul {
 }
 .header {
 }
+.header > .container{
+display: flex;
+}
 .header-nav {
+
 }
 .header-list {
+  display: flex;
+  margin-left: 215px;
+  
 }
-.header.list-item {
+
+.header-list-item,
+.header-mail {
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .header-link,
 .header-mail,
@@ -57,7 +71,8 @@ ul {
 .header-tel:focus {
   color: var(--accent-color);
 }
-.header-block-contacts {
+.header-contacts {
+  display: flex;
 }
 .header-mail {
 }
