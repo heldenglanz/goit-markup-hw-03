@@ -4,20 +4,31 @@
   --white-color: #ffffff;
   --accent-color: #2196f3;
 }
+*,
+::before,
+::after{
+box-sizing: border-box;
+}
+
+*{
+  outline: solid 1px  teal;
+}
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--white-color);
   color: var(--main-color);
-  text-decoration: none;
-  list-style: none;
+  
 }
-
+link{
+  display: block;
+}
 link,
 a,
 ul {
   text-decoration: none;
   list-style: none;
+  
 }
 .web {
   color: var(--accent-color);
@@ -34,13 +45,28 @@ ul {
   color: var(--main-color);
 }
 .header {
+  background-color: var(--white-color);
+ padding: 0 215px;
+}
+.header > .container{
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+
 }
 .header-nav {
+ margin-left: 93px;
+
 }
 .header-list {
+  display: flex;
 }
-.header-list.list-item {
+.header-list.list-item,
+.header-contacts.list-item {
   color: var(--main-color)
+}
+.header-list >.list-item + .list-item {
+  margin-left: 50px;
 }
 .header-link{
   font-weight: 500;
@@ -66,9 +92,13 @@ ul {
 .header-tel:focus {
   color: var(--accent-color);
 }
-.header-block-contacts {
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .header-mail {
+  margin-right: 50px;
 }
 .header-tel {
 }
@@ -98,7 +128,7 @@ ul {
 
 /*-------------TASKS-SECTION-------*/
 .tasks {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 .tasks-list {
 }
@@ -118,7 +148,7 @@ ul {
 
 /*----------WORKS---------*/
 .works {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 .works-title {
   letter-spacing: 0.03em;
