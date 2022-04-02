@@ -4,17 +4,13 @@
   --white-color: #ffffff;
   --accent-color: #2196f3;
 }
-*{
- outline: solid 1px teal;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--white-color);
+  color: var(--main-color);
+  text-decoration: none;
+  list-style: none;
 }
 
 link,
@@ -22,13 +18,11 @@ a,
 ul {
   text-decoration: none;
   list-style: none;
-
 }
-/*--------LOGO----------*/
 .web {
   color: var(--accent-color);
 }
-
+/*---------HEADER---------*/
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -39,38 +33,30 @@ ul {
 .studio-head {
   color: var(--main-color);
 }
-
-/*---------HEADER---------*/
-
 .header {
-}
-.header > .container{
-display: flex;
-align-items: center;
-justify-content: space-between;
 }
 .header-nav {
 }
 .header-list {
-  display: flex;
-  align-items: center;
 }
-.header-item{
-}
-.header-item:not(last-child){
-margin-right: 50px;
+.header-list.list-item {
+  color: var(--main-color)
 }
 .header-link{
-  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
 }
-.header-link,
 .header-mail,
 .header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--second-color);
+  
 }
 .header-link:hover,
 .header-link:focus,
@@ -80,9 +66,7 @@ margin-right: 50px;
 .header-tel:focus {
   color: var(--accent-color);
 }
-.header-contacts {
-  display: flex;
-
+.header-block-contacts {
 }
 .header-mail {
 }
@@ -137,6 +121,7 @@ margin-right: 50px;
   background-color: #e5e5e5;
 }
 .works-title {
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -155,6 +140,7 @@ margin-right: 50px;
   background-color: #f5f4fa;
 }
 .team-title {
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
