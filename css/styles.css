@@ -344,14 +344,12 @@ padding-bottom: 30px;
 }
 
 /*-------------Portfolio-----------*/
-body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--white-color)
-}
+
 /*projects*/
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
+ margin: 0 auto;
 }
 /*navigation*/
 
@@ -359,6 +357,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  
 }
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
@@ -379,6 +378,7 @@ body {
   color: #212121;
   background-color: #f5f4fa;
   cursor: pointer;
+  
 }
 .nav-btn:hover,
 .nav-btn:focus {
